@@ -1,0 +1,25 @@
+package:
+  name: pgdspider
+  version: "2.1.1.3"
+
+source:
+  fn: PGDSpider_2.1.1.3.zip
+  url: http://www.cmpg.unibe.ch/software/PGDSpider/PGDSpider_2.1.1.3.zip
+  md5: ea739dbffe62de8778e249922efa8c8f
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - openjdk
+
+test:
+  commands:
+    - pgdspider -h
+
+about:
+  home: http://www.cmpg.unibe.ch/software/PGDSpider/
+  license: BSD 3-Clause
+  summary: An automated data conversion tool for connecting population genetics and genomics programs
+
